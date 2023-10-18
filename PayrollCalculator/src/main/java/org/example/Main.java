@@ -18,14 +18,14 @@ public class Main {
        while((readLine = ReadFile.readLine()) !=null)
        {
            //readLine = "10|Dana Wyatt|52.5|12.50"
-           String [] SeparatedLine = readLine.split("|");
+           String [] SeparatedLine = readLine.split("\\|");
            // SeparatedLine = ["10","Dana Wyatt", "52.5","12.50"]
            int id = Integer.parseInt(SeparatedLine[0]);
            String name = SeparatedLine[1];
            double hoursworked = Double.parseDouble(SeparatedLine[2]);
            double rate = Double.parseDouble(SeparatedLine[3]);
            Employee e1 = new Employee(id, name, hoursworked, rate);
-           System.out.printf("Employee Id: "+ e1.getEmployeeId()+"\nEmployee name: "+ e1.getName()+ "\nEmployee Gross pay: "+ e1.getGrossPay());
+           System.out.printf("Employee Id: "+ e1.getEmployeeId()+"\nEmployee name: "+ e1.getName()+ "\nEmployee Gross pay: "+ e1.getGrossPay()+ "\n");
            readLine = ReadFile.readLine();
        }
 
