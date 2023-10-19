@@ -21,7 +21,7 @@ public class Main {
 
             System.out.println(s[UserInput - 1]);
             System.out.println("Do you want to see another quote (Y/N):");
-            //"Hally" = charAt(0) H
+            //"Preen" = charAt(0) P
             char ans = scanner.next().charAt(0); //.charAt(0)
             while (ans == 'Y' || ans == 'y') //  && -> It has to satisfy both  || -> Either one condition has to satisfy
             {
