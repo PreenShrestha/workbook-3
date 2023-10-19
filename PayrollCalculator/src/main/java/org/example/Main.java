@@ -25,9 +25,10 @@ public class Main {
            double hoursworked = Double.parseDouble(SeparatedLine[2]);
            double rate = Double.parseDouble(SeparatedLine[3]);
            Employee e1 = new Employee(id, name, hoursworked, rate);
-           System.out.printf("Employee Id: "+ e1.getEmployeeId()+"\nEmployee name: "+ e1.getName()+ "\nEmployee Gross pay: "+ e1.getGrossPay()+ "\n");
+           System.out.printf("Employee Id: "+ e1.getEmployeeId()+"\nEmployee Name: "+ e1.getName()+ "\nEmployee Gross pay: "+ e1.getGrossPay()+ "\n");
            readLine = ReadFile.readLine();
        }
+       ReadFile.close();
 
    }
    catch(IOException e){
