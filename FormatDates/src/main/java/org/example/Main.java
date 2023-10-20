@@ -23,10 +23,15 @@ public class Main {
         DateTimeFormatter dayInWeek = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy hh:mm");
         String dayInWeekWithMonInWords = currentTime.format(dayInWeek); //"Friday, Oct 20, 2023 05:40" - ex
 
+        //Challenge, display in your local Time Zone
+        DateTimeFormatter customFormat = DateTimeFormatter.ofPattern("hh:mm 'on' dd-MMM-yyyy");
+        String customFormattedDateTime = currentTime.format(customFormat);
+
         // Print the formatted date and time strings
         System.out.println(fullDate);
         System.out.println(newFormattedDate);
         System.out.println(monInWords);
         System.out.println(dayInWeekWithMonInWords);
+        System.out.println(customFormattedDateTime);
     }
 }
